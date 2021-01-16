@@ -5,10 +5,8 @@ After=network.target
 [Service]
 ExecStart=/home/pi/netmon/netmon.sh
 WorkingDirectory=/home/pi/netmon
-StandardOutput=inherit
-StandardInput=inherit
 Restart=always
-User=pi
+User=root
 
 [Install]
 WantedBy=multi-user.target
